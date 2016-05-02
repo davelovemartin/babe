@@ -1998,6 +1998,12 @@ FOOTER STYLES
   clear: both;
   background-color: #fff;
   color: #130F30;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 2em;
+  width: 100%;
+  text-align: center;
 }
 
 /*
@@ -2010,6 +2016,10 @@ override these styles for the desktop
 view.
 */
 /* end .footer-links */
+.copyright {
+  font-size: 0.667em;
+}
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's

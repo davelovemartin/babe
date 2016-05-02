@@ -852,6 +852,12 @@ FOOTER STYLES
 	clear: both;
 	background-color: $white;
 	color: $black;
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	height: 2em;
+	width:100%;
+	text-align: center;
 }
 
 	/*
@@ -874,4 +880,6 @@ FOOTER STYLES
 	} /* end .footer-links */
 
 
-	.copyright {}
+	.copyright {
+		font-size: 0.667em;
+	}
