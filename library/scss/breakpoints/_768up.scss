@@ -57,7 +57,7 @@ NAVIGATION STYLES
 			has the possibility of being a mobile device.
 			*/
 			&:hover, &:focus {
-				color: $white;
+				color: $nav-hover;
 				text-decoration: underline;
 			}
 		}
@@ -284,4 +284,3 @@ mobile. Make sure to double check these!
 		}
 	}
 } /* end .footer-links */
-
