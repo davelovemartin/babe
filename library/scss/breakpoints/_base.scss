@@ -239,7 +239,9 @@ and more scalable.
 	li.current_page_item,
 	li.current_page_ancestor {
 
-		a {}
+		a {
+			font-style: italic;
+		}
 
 	}  /* end current highlighters */
 

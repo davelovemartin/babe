@@ -1606,6 +1606,11 @@ and more scalable.
 .nav li ul.children li a {
   padding-left: 30px;
 }
+.nav li.current-menu-item a,
+.nav li.current_page_item a,
+.nav li.current_page_ancestor a {
+  font-style: italic;
+}
 
 /* end .nav */
 /*********************
