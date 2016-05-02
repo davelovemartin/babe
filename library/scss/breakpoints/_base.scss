@@ -155,13 +155,15 @@ HEADER STYLES
 	background-color: $white;
 }
 
-	#logo {
-		margin: 0.75em 0;
 
-		a {
-			color: $white;
-		}
-	}
+#site-name {
+	color: $black;
+	text-decoration: none;
+	padding: 0.75em;
+	text-transform: uppercase;
+	float: left;
+	display: inline;
+}
 
 /*********************
 NAVIGATION STYLES

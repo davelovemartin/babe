@@ -1556,11 +1556,13 @@ HEADER STYLES
   background-color: #fff;
 }
 
-#logo {
-  margin: 0.75em 0;
-}
-#logo a {
-  color: #fff;
+#site-name {
+  color: #130F30;
+  text-decoration: none;
+  padding: 0.75em;
+  text-transform: uppercase;
+  float: left;
+  display: inline;
 }
 
 /*********************
