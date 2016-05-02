@@ -1594,6 +1594,7 @@ and more scalable.
   color: #130F30;
   text-decoration: none;
   padding: 0.75em;
+  text-transform: uppercase;
   /*
   remember this is for mobile ONLY, so there's no need
   to even declare hover styles here, you can do it in
@@ -2128,12 +2129,12 @@ you can add resource intensive styles.
   *********************/
   .nav {
     border: 0;
+    float: right;
     /* end .menu ul li */
     /* highlight current page */
     /* end current highlighters */
   }
   .nav ul {
-    background: #130F30;
     margin-top: 0;
   }
   .nav li {
@@ -2152,13 +2153,12 @@ you can add resource intensive styles.
     */
   }
   .nav li a:hover, .nav li a:focus {
-    color: #211a53;
+    color: #27497e;
     text-decoration: underline;
   }
   .nav li ul.sub-menu,
   .nav li ul.children {
     margin-top: 0;
-    border: 1px solid #ccc;
     border-top: 0;
     position: absolute;
     visibility: hidden;
@@ -2179,7 +2179,6 @@ you can add resource intensive styles.
     border-right: 0;
     display: block;
     width: 180px;
-    border-bottom: 1px solid #ccc;
   }
   .nav li ul.sub-menu li:last-child a,
   .nav li ul.children li:last-child a {
@@ -2204,7 +2203,6 @@ you can add resource intensive styles.
   }
 
   .widgettitle {
-    border-bottom: 2px solid #444;
     margin-bottom: 0.75em;
   }
 
