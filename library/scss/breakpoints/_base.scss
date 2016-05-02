@@ -258,16 +258,13 @@ POSTS & CONTENT STYLES
 			background-color: $white;
 			border-radius: 3px;
 			margin-bottom: 1.5em;
-			border: 1px solid $border-color;
 
 			header {
-				border-bottom: 1px solid $light-gray;
 				padding: 1.5em;
 			}
 
 			footer {
 				padding: 1.5em;
-				border-top: 1px solid $light-gray;
 
 				p {
 					margin: 0;
@@ -340,7 +337,6 @@ POSTS & CONTENT STYLES
 
 			table {
 				width: 100%;
-				border: 1px solid $gray;
 				margin-bottom: 1.5em;
 
 				caption {
@@ -353,7 +349,6 @@ POSTS & CONTENT STYLES
 			}
 
 			tr {
-				border-bottom: 1px solid $gray;
 
 				&:nth-child(even) {
 					background-color: $light-gray;
@@ -362,7 +357,6 @@ POSTS & CONTENT STYLES
 
 			td {
 				padding: 7px;
-				border-right: 1px solid $gray;
 
 				&:last-child {
 					border-right: 0;
@@ -371,8 +365,6 @@ POSTS & CONTENT STYLES
 
 			th {
 				background-color: $light-gray;
-				border-bottom: 1px solid $gray;
-				border-right: 1px solid $gray;
 
 				&:last-child {
 					border-right: 0;
@@ -382,7 +374,6 @@ POSTS & CONTENT STYLES
 			blockquote {
 				margin: 0 0 1.5em 0.75em;
 				padding: 0 0 0 0.75em;
-				border-left: 3px solid $blue;
 				font-style: italic;
 				color: $meta-gray;
 
@@ -513,7 +504,6 @@ PAGE NAVI STYLES
       float: left;
       display: inline;
       overflow: hidden;
-      border-right: 1px solid $gray;
     }
 
     a, span {
@@ -526,11 +516,10 @@ PAGE NAVI STYLES
       padding: 0.75em;
       min-width: 1em;
       display: block;
-      color: $blue;
+      color: $link-color;
 
       &:hover, &:focus {
-      	background-color: $blue;
-      	color: $white;
+      	color: $link-hover;
       }
     }
 
@@ -569,7 +558,6 @@ COMMENT STYLES
 #comments-title {
 	padding: 0.75em;
 	margin: 0;
-	border-top: 1px solid $light-gray;
 
 	/* number of comments span */
 	span {}
@@ -596,7 +584,6 @@ COMMENT STYLES
 	clear: both;
 	overflow: hidden;
 	padding: 1.5em;
-	border-bottom: 1px solid $light-gray;
 
 	.comment-author {
 		padding: 7px;
@@ -760,7 +747,6 @@ COMMENT FORM STYLES
 .comment-respond {
 	@extend .cf;
 	padding: 1.5em;
-	border-top: 1px solid $light-gray;
 }
 
 	#reply-title {
@@ -850,7 +836,6 @@ SIDEBARS & ASIDES
 		background-color: $white;
 		padding: 1.5em;
 		text-align: center;
-		border: 1px solid $border-color;
 		border-radius: 2px;
 		margin-bottom: 1.5em;
 	}
