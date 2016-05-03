@@ -50,3 +50,6 @@ Here's a great tutorial on how to
 use color variables properly:
 http://sachagreif.com/sass-color-variables/
 */
+
+$base-font-size: 1rem;
+$base-line-height: $base-font-size * 1.5;

@@ -26,17 +26,17 @@ the whole project.
 // normalize: http://necolas.github.io/normalize.css/
 @import "partials/normalize";
 
-// Sass variables	
+// Sass variables
 @import "partials/variables";
 
 // typography
 @import "partials/typography";
 
-// Sass functions
-@import "partials/functions";
-
 // import mixins
 @import "partials/mixins";
+
+// Sass functions
+@import "partials/functions";
 
 // the grid
 @import "partials/grid";

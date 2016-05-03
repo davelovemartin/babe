@@ -147,6 +147,9 @@ font-face {
 }
 
 /*
+https://scotch.io/tutorials/aesthetic-sass-3-typography-and-vertical-rhythm
+*/
+/*
 The following is based of Typebase:
 https://github.com/devinhunt/typebase.css
 I've edited it a bit, but it's a nice starting point.
@@ -214,6 +217,9 @@ BOX SIZING
 /* @include box-sizing(border-box); */
 /* NOTE: value of "padding-box" is only supported in Gecko. So
 probably best not to use it. I mean, were you going to anyway? */
+/*********************
+TYPE SETTING
+*********************/
 /******************************************************************
 Site Name:
 Author:

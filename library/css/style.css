@@ -618,6 +618,9 @@ font-face {
 }
 
 /*
+https://scotch.io/tutorials/aesthetic-sass-3-typography-and-vertical-rhythm
+*/
+/*
 The following is based of Typebase:
 https://github.com/devinhunt/typebase.css
 I've edited it a bit, but it's a nice starting point.
@@ -643,51 +646,6 @@ p {
   font-feature-settings: "liga", "dlig";
 }
 
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: Sass Functions
-
-You can do a lot of really cool things in Sass. Functions help you
-make repeated actions a lot easier. They are really similar to mixins,
-but can be used for so much more.
-
-Anyway, keep them all in here so it's easier to find when you're
-looking for one.
-
-For more info on functions, go here:
-http://sass-lang.com/documentation/Sass/Script/Functions.html
-
-******************************************************************/
-/*********************
-COLOR FUNCTIONS
-These are helpful when you're working
-with shadows and such things. It's essentially
-a quicker way to write RGBA.
-
-Example:
-box-shadow: 0 0 4px black(0.3);
-compiles to:
-box-shadow: 0 0 4px rgba(0,0,0,0.3);
-*********************/
-/*********************
-RESPONSIVE HELPER FUNCTION
-If you're creating a responsive site, then
-you've probably already read
-Responsive Web Design: http://www.abookapart.com/products/responsive-web-design
-
-Here's a nice little helper function for calculating
-target / context
-as mentioned in that book.
-
-Example:
-width: cp(650px, 1000px);
-or
-width: calc-percent(650px, 1000px);
-both compile to:
-width: 65%;
-*********************/
 /******************************************************************
 Site Name:
 Author:
@@ -730,6 +688,57 @@ BOX SIZING
 /* @include box-sizing(border-box); */
 /* NOTE: value of "padding-box" is only supported in Gecko. So
 probably best not to use it. I mean, were you going to anyway? */
+/*********************
+TYPE SETTING
+*********************/
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Sass Functions
+
+You can do a lot of really cool things in Sass. Functions help you
+make repeated actions a lot easier. They are really similar to mixins,
+but can be used for so much more.
+
+Anyway, keep them all in here so it's easier to find when you're
+looking for one.
+
+For more info on functions, go here:
+http://sass-lang.com/documentation/Sass/Script/Functions.html
+
+******************************************************************/
+/*********************
+COLOR FUNCTIONS
+These are helpful when you're working
+with shadows and such things. It's essentially
+a quicker way to write RGBA.
+
+Example:
+box-shadow: 0 0 4px black(0.3);
+compiles to:
+box-shadow: 0 0 4px rgba(0,0,0,0.3);
+*********************/
+/*********************
+TYPOGRAPHY HELPER
+*********************/
+/*********************
+RESPONSIVE HELPER FUNCTION
+If you're creating a responsive site, then
+you've probably already read
+Responsive Web Design: http://www.abookapart.com/products/responsive-web-design
+
+Here's a nice little helper function for calculating
+target / context
+as mentioned in that book.
+
+Example:
+width: cp(650px, 1000px);
+or
+width: calc-percent(650px, 1000px);
+both compile to:
+width: 65%;
+*********************/
 /******************************************************************
 Site Name:
 Author:
@@ -1432,7 +1441,7 @@ GENERAL STYLES
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 100%;
-  line-height: 1.5;
+  line-height: 1.5rem;
   color: #130F30;
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
@@ -1523,30 +1532,42 @@ h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
 }
 
 h1, .h1 {
-  font-size: 2.5em;
-  line-height: 1.333em;
+  font-size: 2.618rem;
+  line-height: 3rem;
+  font-weight: 800;
 }
 
 h2, .h2 {
-  font-size: 1.75em;
-  line-height: 1.4em;
-  margin-bottom: 0.375em;
+  font-size: 2.618rem;
+  line-height: 3rem;
+  font-weight: 800;
+  font-style: italic;
 }
 
 h3, .h3 {
-  font-size: 1.125em;
-}
-
-h4, .h4 {
-  font-size: 1.1em;
+  font-size: 1.618rem;
+  line-height: 3rem;
   font-weight: 700;
 }
 
+h4, .h4 {
+  font-size: 1.618rem;
+  line-height: 3rem;
+  font-weight: 700;
+  font-style: italic;
+}
+
 h5, .h5 {
-  font-size: 0.846em;
-  line-height: 2.09em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  font-style: italic;
 }
 
 /*********************
@@ -1559,7 +1580,7 @@ HEADER STYLES
 #site-name {
   color: #130F30;
   text-decoration: none;
-  padding: 0.75em;
+  padding: 0.5rem;
   text-transform: uppercase;
   float: left;
   display: inline;
@@ -1595,7 +1616,7 @@ and more scalable.
   display: block;
   color: #130F30;
   text-decoration: none;
-  padding: 0.75em;
+  padding: 0.5rem;
   text-transform: uppercase;
   /*
   remember this is for mobile ONLY, so there's no need
@@ -1606,7 +1627,7 @@ and more scalable.
 }
 .nav li ul.sub-menu li a,
 .nav li ul.children li a {
-  padding-left: 30px;
+  padding-left: 1rem;
 }
 .nav li.current-menu-item a,
 .nav li.current_page_item a,
@@ -1619,19 +1640,18 @@ and more scalable.
 POSTS & CONTENT STYLES
 *********************/
 #content {
-  margin-top: 1.5em;
+  margin-top: 2rem;
 }
 
 .hentry {
   background-color: #fff;
-  border-radius: 3px;
-  margin-bottom: 1.5em;
+  margin-bottom: 2rem;
 }
 .hentry header {
-  padding: 1.5em;
+  padding: 2rem;
 }
 .hentry footer {
-  padding: 1.5em;
+  padding: 2rem;
 }
 .hentry footer p {
   margin: 0;
@@ -1662,7 +1682,7 @@ POSTS & CONTENT STYLES
 
 /* entry content */
 .entry-content {
-  padding: 1.5em 1.5em 0;
+  padding: 2rem 2rem 0;
   /*
   image alignment on a screen this size may be
   a bit difficult. It's set to start aligning
@@ -1671,24 +1691,23 @@ POSTS & CONTENT STYLES
   */
 }
 .entry-content p {
-  margin: 0 0 1.5em;
+  margin: 0 0 2rem;
 }
 .entry-content table {
   width: 100%;
-  margin-bottom: 1.5em;
+  margin-bottom: 2rem;
 }
 .entry-content table caption {
-  margin: 0 0 7px;
-  font-size: 0.75em;
+  margin: 0 0 1rem;
+  font-size: 1rem;
   color: #9fa6b4;
   text-transform: uppercase;
-  letter-spacing: 1px;
 }
 .entry-content tr:nth-child(even) {
   background-color: #f8f9fa;
 }
 .entry-content td {
-  padding: 7px;
+  padding: 1rem;
 }
 .entry-content td:last-child {
   border-right: 0;
@@ -1700,8 +1719,8 @@ POSTS & CONTENT STYLES
   border-right: 0;
 }
 .entry-content blockquote {
-  margin: 0 0 1.5em 0.75em;
-  padding: 0 0 0 0.75em;
+  margin: 0 0 2rem 1rem;
+  padding: 0 0 0 1rem;
   font-style: italic;
   color: #9fa6b4;
 }
@@ -1709,10 +1728,10 @@ POSTS & CONTENT STYLES
   margin-left: 0;
   font-size: 0.9em;
   color: #787878;
-  margin-bottom: 1.5em;
+  margin-bottom: 2rem;
 }
 .entry-content img {
-  margin: 0 0 1.5em 0;
+  margin: 0 0 2rem 0;
   max-width: 100%;
   height: auto;
 }
@@ -1728,8 +1747,8 @@ POSTS & CONTENT STYLES
   background: #130F30;
   color: #f8f9fa;
   font-size: 0.9em;
-  padding: 1.5em;
-  margin: 0 0 1.5em;
+  padding: 2rem;
+  margin: 0 0 2rem;
   border-radius: 3px;
 }
 
@@ -1747,7 +1766,7 @@ POSTS & CONTENT STYLES
 }
 .wp-caption p.wp-caption-text {
   font-size: 0.85em;
-  margin: 4px 0 7px;
+  margin: 4px 0 1rem;
   text-align: center;
 }
 
@@ -1764,7 +1783,7 @@ PAGE NAVI STYLES
 ******************************************************************/
 .pagination,
 .wp-prev-next {
-  margin: 1.5em 0;
+  margin: 2rem 0;
 }
 
 .pagination {
@@ -1792,7 +1811,7 @@ PAGE NAVI STYLES
   line-height: 1em;
   font-size: 1em;
   font-weight: normal;
-  padding: 0.75em;
+  padding: 1rem;
   min-width: 1em;
   display: block;
   color: #3B6FBE;
@@ -1824,7 +1843,7 @@ COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
 #comments-title {
-  padding: 0.75em;
+  padding: 1rem;
   margin: 0;
   /* number of comments span */
 }
@@ -1838,14 +1857,14 @@ COMMENT STYLES
   position: relative;
   clear: both;
   overflow: hidden;
-  padding: 1.5em;
+  padding: 2rem;
   /* vcard */
   /* end .commentlist .vcard */
   /* end children */
   /* general comment classes */
 }
 .comment .comment-author {
-  padding: 7px;
+  padding: 1rem;
   border: 0;
 }
 .comment .vcard {
@@ -1889,8 +1908,8 @@ COMMENT STYLES
 }
 .comment:not(.depth-1) {
   margin-top: 0;
-  margin-left: 7px;
-  padding: 7px;
+  margin-left: 1rem;
+  padding: 1rem;
 }
 .comment.odd {
   background-color: #fff;
@@ -1902,9 +1921,9 @@ COMMENT STYLES
 /* comment meta */
 /* comment content */
 .comment_content p {
-  margin: 0.7335em 0 1.5em;
+  margin: 0.7335em 0 2rem;
   font-size: 1em;
-  line-height: 1.5em;
+  line-height: 2rem;
 }
 
 /* end .commentlist .comment_content */
@@ -1918,16 +1937,17 @@ COMMENT STYLES
 /* edit comment link */
 .comment-edit-link {
   font-style: italic;
-  margin: 0 7px;
+  margin: 0 1rem;
   text-decoration: none;
-  font-size: 0.9em;
+  font-size: 0.618rem;
+  line-height: 1.5rem;
 }
 
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
 .comment-respond {
-  padding: 1.5em;
+  padding: 2rem;
 }
 
 #reply-title {
@@ -1944,36 +1964,37 @@ COMMENT FORM STYLES
 }
 
 .comment-form-comment {
-  margin: 1.5em 0 0.75em;
+  margin: 2rem 0 1rem;
 }
 
 .form-allowed-tags {
-  padding: 1.5em;
+  padding: 2rem;
   background-color: #f8f9fa;
-  font-size: 0.9em;
+  font-size: 0.618rem;
+  line-height: 1.5rem;
 }
 
 /* comment submit button */
 #submit {
   float: right;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 /* comment form title */
 #comment-form-title {
-  margin: 0 0 1.1em;
+  margin: 0 0 1rem;
 }
 
 /* cancel comment reply link */
 /* logged in comments */
 /* allowed tags */
 #allowed_tags {
-  margin: 1.5em 10px 0.7335em 0;
+  margin: 2rem 1rem 1rem 0;
 }
 
 /* no comments */
 .nocomments {
-  margin: 0 20px 1.1em;
+  margin: 0 1rem 1rem;
 }
 
 /*********************
@@ -1985,10 +2006,9 @@ SIDEBARS & ASIDES
 
 .no-widgets {
   background-color: #fff;
-  padding: 1.5em;
+  padding: 2rem;
   text-align: center;
-  border-radius: 2px;
-  margin-bottom: 1.5em;
+  margin-bottom: 2rem;
 }
 
 /*********************
@@ -2001,7 +2021,7 @@ FOOTER STYLES
   position: fixed;
   left: 0px;
   bottom: 0px;
-  height: 2em;
+  height: 2rem;
   width: 100%;
   text-align: center;
 }
@@ -2017,7 +2037,8 @@ view.
 */
 /* end .footer-links */
 .copyright {
-  font-size: 0.667em;
+  font-size: 0.618rem;
+  line-height: 1.5rem;
 }
 
 /*********************

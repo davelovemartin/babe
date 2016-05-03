@@ -18,7 +18,7 @@ GENERAL STYLES
 body {
 	font-family: $sans-serif;
 	font-size: 100%;
-	line-height: 1.5;
+	line-height: $base-line-height;
 	color: $text-color;
 	background-color: $white;
   	-webkit-font-smoothing: antialiased;
@@ -121,30 +121,36 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 }
 
 h1, .h1 {
-	font-size: 2.5em;
-	line-height: 1.333em;
+	@include type-setting(2);
+	font-weight: 800;
 }
 
 h2, .h2 {
-	font-size: 1.75em;
-	line-height: 1.4em;
-	margin-bottom: 0.375em;
+	@include type-setting(2);
+	font-weight: 800;
+	font-style: italic;
 }
 
 h3, .h3 {
-	font-size: 1.125em;
-}
-
-h4, .h4 {
-	font-size: 1.1em;
+	@include type-setting(1);
 	font-weight: 700;
 }
 
+h4, .h4 {
+	@include type-setting(1);
+	font-weight: 700;
+	font-style: italic;
+}
+
 h5, .h5 {
-	font-size: 0.846em;
-	line-height: 2.09em;
-	text-transform: uppercase;
-	letter-spacing: 2px;
+	@include type-setting(0);
+	font-weight: 600;
+}
+
+h6, .h6 {
+	@include type-setting(0);
+	font-weight: 600;
+	font-style: italic;
 }
 
 /*********************
@@ -159,7 +165,7 @@ HEADER STYLES
 #site-name {
 	color: $black;
 	text-decoration: none;
-	padding: 0.75em;
+	padding: 0.5rem;
 	text-transform: uppercase;
 	float: left;
 	display: inline;
@@ -187,7 +193,7 @@ and more scalable.
 			display: block;
 			color: $black;
 			text-decoration: none;
-			padding: 0.75em;
+			padding: 0.5rem;
 			text-transform: uppercase;
 			/*
 			remember this is for mobile ONLY, so there's no need
@@ -217,7 +223,7 @@ and more scalable.
 			li {
 
 				a {
-					padding-left: 30px;
+					padding-left: 1rem;
 
 					&:hover,
 					&:focus {}
@@ -255,20 +261,19 @@ POSTS & CONTENT STYLES
 *********************/
 
 #content {
-	margin-top: 1.5em;
+	margin-top: 2rem;
 }
 
 		.hentry {
 			background-color: $white;
-			border-radius: 3px;
-			margin-bottom: 1.5em;
+			margin-bottom: 2rem;
 
 			header {
-				padding: 1.5em;
+				padding: 2rem;
 			}
 
 			footer {
-				padding: 1.5em;
+				padding: 2rem;
 
 				p {
 					margin: 0;
@@ -312,10 +317,10 @@ POSTS & CONTENT STYLES
 
 		/* entry content */
 		.entry-content {
-			padding: 1.5em 1.5em 0;
+			padding: 2rem 2rem 0;
 
 			p {
-				margin: 0 0 1.5em;
+				margin: 0 0 2rem;
 			}
 
 
@@ -341,14 +346,13 @@ POSTS & CONTENT STYLES
 
 			table {
 				width: 100%;
-				margin-bottom: 1.5em;
+				margin-bottom: 2rem;
 
 				caption {
-					margin: 0 0 7px;
-					font-size: 0.75em;
+					margin: 0 0 1rem;
+					font-size: 1rem;
 					color: $meta-gray;
 					text-transform: uppercase;
-					letter-spacing: 1px;
 				}
 			}
 
@@ -360,7 +364,7 @@ POSTS & CONTENT STYLES
 			}
 
 			td {
-				padding: 7px;
+				padding: 1rem;
 
 				&:last-child {
 					border-right: 0;
@@ -376,8 +380,8 @@ POSTS & CONTENT STYLES
 			}
 
 			blockquote {
-				margin: 0 0 1.5em 0.75em;
-				padding: 0 0 0 0.75em;
+				margin: 0 0 2rem 1rem;
+				padding: 0 0 0 1rem;
 				font-style: italic;
 				color: $meta-gray;
 
@@ -393,11 +397,11 @@ POSTS & CONTENT STYLES
 				margin-left: 0;
 				font-size: 0.9em;
 				color: #787878;
-				margin-bottom: 1.5em;
+				margin-bottom: 2rem;
 			}
 
 			img {
-				margin: 0 0 1.5em 0;
+				margin: 0 0 2rem 0;
 				max-width: 100%;
 				height: auto;
 			}
@@ -425,8 +429,8 @@ POSTS & CONTENT STYLES
 				background: $black;
 				color: $light-gray;
 				font-size: 0.9em;
-				padding: 1.5em;
-				margin: 0 0 1.5em;
+				padding: 2rem;
+				margin: 0 0 2rem;
 				border-radius: 3px;
 			}
 
@@ -446,7 +450,7 @@ POSTS & CONTENT STYLES
 
 			p.wp-caption-text {
 				font-size: 0.85em;
-				margin: 4px 0 7px;
+				margin: 4px 0 1rem;
 				text-align: center;
 			}
 
@@ -488,7 +492,7 @@ PAGE NAVI STYLES
 
 .pagination,
 .wp-prev-next {
-	margin: 1.5em 0;
+	margin: 2rem 0;
 }
 	.pagination{
     text-align: center;
@@ -517,7 +521,7 @@ PAGE NAVI STYLES
       line-height: 1em;
       font-size: 1em;
       font-weight: normal;
-      padding: 0.75em;
+      padding: 1rem;
       min-width: 1em;
       display: block;
       color: $link-color;
@@ -560,7 +564,7 @@ COMMENT STYLES
 
 /* h3 comment title */
 #comments-title {
-	padding: 0.75em;
+	padding: 1rem;
 	margin: 0;
 
 	/* number of comments span */
@@ -587,10 +591,10 @@ COMMENT STYLES
 	position: relative;
 	clear: both;
 	overflow: hidden;
-	padding: 1.5em;
+	padding: 2rem;
 
 	.comment-author {
-		padding: 7px;
+		padding: 1rem;
 		border: 0;
 	}
 
@@ -666,8 +670,8 @@ COMMENT STYLES
 
 	&:not(.depth-1) {
 		margin-top: 0;
-		margin-left: 7px;
-		padding: 7px;
+		margin-left: 1rem;
+		padding: 1rem;
 	}
 
 	&.depth-2 {}
@@ -715,9 +719,9 @@ COMMENT STYLES
 	.comment_content {
 
 		p {
-			margin: 0.7335em 0 1.5em;
+			margin: 0.7335em 0 2rem;
 			font-size: 1em;
-			line-height: 1.5em;
+			line-height: 2rem;
 		}
 
 	} /* end .commentlist .comment_content */
@@ -737,9 +741,9 @@ COMMENT STYLES
 	/* edit comment link */
 	.comment-edit-link {
 		font-style: italic;
-		margin: 0 7px;
+		margin: 0 1rem;
 		text-decoration: none;
-		font-size: 0.9em;
+		@include type-setting(-1);
 	}
 
 
@@ -750,7 +754,7 @@ COMMENT FORM STYLES
 
 .comment-respond {
 	@extend .cf;
-	padding: 1.5em;
+	padding: 2rem;
 }
 
 	#reply-title {
@@ -768,25 +772,25 @@ COMMENT FORM STYLES
 	}
 
 	.comment-form-comment {
-		margin: 1.5em 0 0.75em;
+		margin: 2rem 0 1rem;
 	}
 
 	.form-allowed-tags {
-		padding: 1.5em;
+		padding: 2rem;
 		background-color: $light-gray;
-		font-size: 0.9em;
+		@include type-setting(-1);
 	}
 
 	/* comment submit button */
 	#submit {
 		@extend .blue-btn;
 		float: right;
-		font-size: 1em;
+		font-size: 1rem;
 	}
 
 	/* comment form title */
 	#comment-form-title {
-		margin: 0 0 1.1em;
+		margin: 0 0 1rem;
 	}
 
 	/* cancel comment reply link */
@@ -799,12 +803,12 @@ COMMENT FORM STYLES
 
 	/* allowed tags */
 	#allowed_tags {
-		margin: 1.5em 10px 0.7335em 0;
+		margin: 2rem 1rem 1rem 0;
 	}
 
 	/* no comments */
 	.nocomments {
-		margin: 0 20px 1.1em;
+		margin: 0 1rem 1rem;
 	}
 
 /*********************
@@ -838,10 +842,9 @@ SIDEBARS & ASIDES
 
 	.no-widgets {
 		background-color: $white;
-		padding: 1.5em;
+		padding: 2rem;
 		text-align: center;
-		border-radius: 2px;
-		margin-bottom: 1.5em;
+		margin-bottom: 2rem;
 	}
 
 /*********************
@@ -855,7 +858,7 @@ FOOTER STYLES
 	position:fixed;
 	left:0px;
 	bottom:0px;
-	height: 2em;
+	height: 2rem;
 	width:100%;
 	text-align: center;
 }
@@ -881,5 +884,5 @@ FOOTER STYLES
 
 
 	.copyright {
-		font-size: 0.667em;
+		@include type-setting(-1);
 	}
