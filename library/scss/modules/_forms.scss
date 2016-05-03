@@ -39,13 +39,11 @@ select,
 textarea,
 .field {
   display: block;
-  height: 40px;
-  line-height: 1em;
-  padding: 0 12px;
-  margin-bottom: 14px;
-  font-size: 1em;
+  height: 3rem;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+  @include type-setting(1);
   color: $text-color;
-  border-radius: 3px;
   vertical-align: middle;
   box-shadow: none;
   border: 0;

@@ -1029,28 +1029,23 @@ you can just remove this stylesheet.
 
 ******************************************************************/
 .alert-help, .alert-info, .alert-error, .alert-success {
-  margin: 10px;
-  padding: 5px 18px;
-  border: 1px solid;
+  margin: 1rem;
+  padding: 1rem;
 }
 
 .alert-help {
-  border-color: #e8dc59;
   background: #ebe16f;
 }
 
 .alert-info {
-  border-color: #bfe4f4;
   background: #d5edf8;
 }
 
 .alert-error {
-  border-color: #f8cdce;
   background: #fbe3e4;
 }
 
 .alert-success {
-  border-color: #deeaae;
   background: #e6efc2;
 }
 
@@ -1084,12 +1079,10 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   text-decoration: none;
   color: #fff;
-  font-size: 0.9em;
-  font-size: 34px;
-  line-height: 34px;
+  font-size: 1.618rem;
+  line-height: 3rem;
   font-weight: normal;
-  padding: 0 24px;
-  border-radius: 4px;
+  padding: 0 1rem;
   border: 0;
   cursor: pointer;
   -webkit-transition: background-color 0.14s ease-in-out;
@@ -1157,13 +1150,12 @@ select,
 textarea,
 .field {
   display: block;
-  height: 40px;
-  line-height: 1em;
-  padding: 0 12px;
-  margin-bottom: 14px;
-  font-size: 1em;
+  height: 3rem;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.618rem;
+  line-height: 3rem;
   color: #130F30;
-  border-radius: 3px;
   vertical-align: middle;
   box-shadow: none;
   border: 0;
@@ -2237,23 +2229,23 @@ you can add resource intensive styles.
   SIDEBARS & ASIDES
   *********************/
   .sidebar {
-    margin-top: 2.2em;
+    margin-top: 2rem;
   }
 
   .widgettitle {
-    margin-bottom: 0.75em;
+    margin-bottom: 1rem;
   }
 
   .widget {
     padding: 0 10px;
-    margin: 2.2em 0;
+    margin: 2rem 0;
   }
   .widget ul li {
-    margin-bottom: 0.75em;
+    margin-bottom: 1rem;
     /* deep nesting */
   }
   .widget ul li ul {
-    margin-top: 0.75em;
+    margin-top: 1rem;
     padding-left: 1em;
   }
 

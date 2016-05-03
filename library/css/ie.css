@@ -415,23 +415,23 @@ NAVIGATION STYLES
 SIDEBARS & ASIDES
 *********************/
 .sidebar {
-  margin-top: 2.2em;
+  margin-top: 2rem;
 }
 
 .widgettitle {
-  margin-bottom: 0.75em;
+  margin-bottom: 1rem;
 }
 
 .widget {
   padding: 0 10px;
-  margin: 2.2em 0;
+  margin: 2rem 0;
 }
 .widget ul li {
-  margin-bottom: 0.75em;
+  margin-bottom: 1rem;
   /* deep nesting */
 }
 .widget ul li ul {
-  margin-top: 0.75em;
+  margin-top: 1rem;
   padding-left: 1em;
 }
 

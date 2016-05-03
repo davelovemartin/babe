@@ -13,31 +13,26 @@ you can just remove this stylesheet.
 
 // alerts and notices
 %alert {
-  margin: 10px;
-  padding: 5px 18px;
-  border: 1px solid;
+  margin: 1rem;
+  padding: 1rem;
 }
 
 .alert-help {
   @extend %alert;
-  border-color: darken($alert-yellow, 5%);
   background: $alert-yellow;
 }
 
 .alert-info {
   @extend %alert;
-  border-color: darken($alert-blue, 5%);
   background: $alert-blue;
 }
 
 .alert-error {
   @extend %alert;
-  border-color: darken($alert-red, 5%);
   background: $alert-red;
 }
 
 .alert-success {
   @extend %alert;
-  border-color: darken($alert-green, 5%);
   background: $alert-green;
 }
