@@ -1572,7 +1572,7 @@ HEADER STYLES
 #site-name {
   color: #130F30;
   text-decoration: none;
-  padding: 0.5rem;
+  padding: 1.5rem;
   text-transform: uppercase;
   float: left;
   display: inline;
@@ -1608,7 +1608,7 @@ and more scalable.
   display: block;
   color: #130F30;
   text-decoration: none;
-  padding: 0.5rem;
+  padding: 1.5rem;
   text-transform: uppercase;
   /*
   remember this is for mobile ONLY, so there's no need
@@ -1631,19 +1631,24 @@ and more scalable.
 /*********************
 POSTS & CONTENT STYLES
 *********************/
+p {
+  -webkit-margin-before: 1.5rem;
+  -webkit-margin-after: 1.5rem;
+}
+
 #content {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .hentry {
   background-color: #fff;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 .hentry header {
-  padding: 2rem;
+  padding: 1.5rem;
 }
 .hentry footer {
-  padding: 2rem;
+  padding: 1.5rem;
 }
 .hentry footer p {
   margin: 0;
@@ -1674,7 +1679,7 @@ POSTS & CONTENT STYLES
 
 /* entry content */
 .entry-content {
-  padding: 2rem 2rem 0;
+  padding: 1.5rem 1.5rem 0;
   /*
   image alignment on a screen this size may be
   a bit difficult. It's set to start aligning
@@ -1683,15 +1688,16 @@ POSTS & CONTENT STYLES
   */
 }
 .entry-content p {
-  margin: 0 0 2rem;
+  margin: 0 0 1.5rem;
 }
 .entry-content table {
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 .entry-content table caption {
-  margin: 0 0 1rem;
-  font-size: 1rem;
+  margin: 0 0 1.5rem;
+  font-size: 1.618rem;
+  line-height: 3rem;
   color: #9fa6b4;
   text-transform: uppercase;
 }
@@ -1699,7 +1705,7 @@ POSTS & CONTENT STYLES
   background-color: #f8f9fa;
 }
 .entry-content td {
-  padding: 1rem;
+  padding: 1.5rem;
 }
 .entry-content td:last-child {
   border-right: 0;
@@ -1711,19 +1717,20 @@ POSTS & CONTENT STYLES
   border-right: 0;
 }
 .entry-content blockquote {
-  margin: 0 0 2rem 1rem;
+  margin: 0 0 1.5rem 1rem;
   padding: 0 0 0 1rem;
   font-style: italic;
   color: #9fa6b4;
 }
 .entry-content dd {
   margin-left: 0;
-  font-size: 0.9em;
+  font-size: 0.618rem;
+  line-height: 1.5rem;
   color: #787878;
   margin-bottom: 2rem;
 }
 .entry-content img {
-  margin: 0 0 2rem 0;
+  margin: 0 0 1.5rem 0;
   max-width: 100%;
   height: auto;
 }
@@ -1738,17 +1745,17 @@ POSTS & CONTENT STYLES
 .entry-content pre {
   background: #130F30;
   color: #f8f9fa;
-  font-size: 0.9em;
-  padding: 2rem;
-  margin: 0 0 2rem;
-  border-radius: 3px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 1.5rem;
+  margin: 0 0 1.5rem;
 }
 
 /* end .entry-content */
 .wp-caption {
   max-width: 100%;
   background: #eee;
-  padding: 5px;
+  padding: 1.5rem;
   /* images inside wp-caption */
 }
 .wp-caption img {
@@ -1757,8 +1764,9 @@ POSTS & CONTENT STYLES
   width: 100%;
 }
 .wp-caption p.wp-caption-text {
-  font-size: 0.85em;
-  margin: 4px 0 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 1.5rem;
   text-align: center;
 }
 
@@ -1775,7 +1783,7 @@ PAGE NAVI STYLES
 ******************************************************************/
 .pagination,
 .wp-prev-next {
-  margin: 2rem 0;
+  margin: 1.5rem 0;
 }
 
 .pagination {
@@ -1787,7 +1795,6 @@ PAGE NAVI STYLES
   white-space: nowrap;
   padding: 0;
   clear: both;
-  border-radius: 3px;
 }
 .pagination li {
   padding: 0;
@@ -1800,10 +1807,10 @@ PAGE NAVI STYLES
   margin: 0;
   text-decoration: none;
   padding: 0;
-  line-height: 1em;
-  font-size: 1em;
   font-weight: normal;
-  padding: 1rem;
+  padding: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   min-width: 1em;
   display: block;
   color: #3B6FBE;
@@ -1835,7 +1842,7 @@ COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
 #comments-title {
-  padding: 1rem;
+  padding: 1.5rem;
   margin: 0;
   /* number of comments span */
 }
@@ -1849,14 +1856,14 @@ COMMENT STYLES
   position: relative;
   clear: both;
   overflow: hidden;
-  padding: 2rem;
+  padding: 1.5rem;
   /* vcard */
   /* end .commentlist .vcard */
   /* end children */
   /* general comment classes */
 }
 .comment .comment-author {
-  padding: 1rem;
+  padding: 1.5rem;
   border: 0;
 }
 .comment .vcard {
@@ -1868,7 +1875,8 @@ COMMENT STYLES
 }
 .comment .vcard time {
   display: block;
-  font-size: 0.9em;
+  font-size: 0.618rem;
+  line-height: 1.5rem;
   font-style: italic;
 }
 .comment .vcard time a {
@@ -1892,7 +1900,7 @@ COMMENT STYLES
   /* change number for different depth */
 }
 .comment[class*=depth-] {
-  margin-top: 1.1em;
+  margin-top: 1.5rem;
 }
 .comment.depth-1 {
   margin-left: 0;
@@ -1901,7 +1909,7 @@ COMMENT STYLES
 .comment:not(.depth-1) {
   margin-top: 0;
   margin-left: 1rem;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 .comment.odd {
   background-color: #fff;
@@ -1913,15 +1921,16 @@ COMMENT STYLES
 /* comment meta */
 /* comment content */
 .comment_content p {
-  margin: 0.7335em 0 2rem;
-  font-size: 1em;
-  line-height: 2rem;
+  margin: 1.5rem 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 /* end .commentlist .comment_content */
 /* comment reply link */
 .comment-reply-link {
-  font-size: 0.9em;
+  font-size: 0.618rem;
+  line-height: 1.5rem;
   float: right;
 }
 
@@ -1939,7 +1948,7 @@ COMMENT STYLES
 COMMENT FORM STYLES
 ******************************************************************/
 .comment-respond {
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 #reply-title {
@@ -1956,11 +1965,11 @@ COMMENT FORM STYLES
 }
 
 .comment-form-comment {
-  margin: 2rem 0 1rem;
+  margin: 1.5rem 0;
 }
 
 .form-allowed-tags {
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: #f8f9fa;
   font-size: 0.618rem;
   line-height: 1.5rem;
@@ -1970,23 +1979,24 @@ COMMENT FORM STYLES
 #submit {
   float: right;
   font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 /* comment form title */
 #comment-form-title {
-  margin: 0 0 1rem;
+  margin: 0 0 1.5rem;
 }
 
 /* cancel comment reply link */
 /* logged in comments */
 /* allowed tags */
 #allowed_tags {
-  margin: 2rem 1rem 1rem 0;
+  margin: 1.5rem 1rem 1.5rem 0;
 }
 
 /* no comments */
 .nocomments {
-  margin: 0 1rem 1rem;
+  margin: 0 1.5rem 1.5rem;
 }
 
 /*********************
@@ -1998,9 +2008,9 @@ SIDEBARS & ASIDES
 
 .no-widgets {
   background-color: #fff;
-  padding: 2rem;
+  padding: 1.5rem;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 /*********************
@@ -2013,7 +2023,7 @@ FOOTER STYLES
   position: fixed;
   left: 0px;
   bottom: 0px;
-  height: 2rem;
+  height: 1.5rem;
   width: 100%;
   text-align: center;
 }
@@ -2229,23 +2239,23 @@ you can add resource intensive styles.
   SIDEBARS & ASIDES
   *********************/
   .sidebar {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
   }
 
   .widgettitle {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   .widget {
     padding: 0 10px;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
   }
   .widget ul li {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     /* deep nesting */
   }
   .widget ul li ul {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     padding-left: 1em;
   }
 

@@ -141,20 +141,20 @@ SIDEBARS & ASIDES
 *********************/
 
 .sidebar {
-	margin-top: 2rem;
+	margin-top: $base-line;
 }
 
 	.widgettitle {
-		margin-bottom: 1rem;
+		margin-bottom: $base-line;
 	}
 
 	.widget {
 		padding: 0 10px;
-		margin: 2rem 0;
+		margin: $base-line 0;
 
 		ul {
 			li {
-				margin-bottom: 1rem;
+				margin-bottom: $base-line;
 
 				&:first-child {}
 				&:last-child {}
@@ -162,7 +162,7 @@ SIDEBARS & ASIDES
 				/* deep nesting */
 
 				ul {
-					margin-top: 1rem;
+					margin-top: $base-line;
 					padding-left: 1em;
 				}
 			}
