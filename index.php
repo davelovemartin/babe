@@ -10,21 +10,13 @@
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
 
-								<header class="article-header">
-
-								</header>
-
 								<section class="entry-content cf">
 									<?php the_content(); ?>
 								</section>
 
 								<footer class="article-footer cf">
-									<p class="footer-comment-count">
-										<?php comments_number( __( '<span>No</span> Comments', 'babe' ), __( '<span>One</span> Comment', 'babe' ), __( '<span>%</span> Comments', 'babe' ) );?>
-									</p>
 
-
-                 	<?php printf( '<p class="footer-category">' . __('filed under', 'babe' ) . ': %1$s</p>' , get_the_category_list(', ') ); ?>
+                 	<?php printf( '<p class="footer-category">' . '%1$s</p>' , get_the_category_list(', ') ); ?>
 
                   <?php the_tags( '<p class="footer-tags tags"><span class="tags-title">' . __( 'Tags:', 'babe' ) . '</span> ', ', ', '</p>' ); ?>
 
