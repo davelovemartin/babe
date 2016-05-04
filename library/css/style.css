@@ -1079,8 +1079,8 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   text-decoration: none;
   color: #fff;
-  font-size: 1.618rem;
-  line-height: 3rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
   font-weight: normal;
   padding: 0 1rem;
   border: 0;
@@ -1153,8 +1153,8 @@ textarea,
   height: 3rem;
   padding: 0 1rem;
   margin-bottom: 1rem;
-  font-size: 1.618rem;
-  line-height: 3rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
   color: #130F30;
   vertical-align: middle;
   box-shadow: none;
@@ -1162,7 +1162,7 @@ textarea,
   width: 100%;
   max-width: 400px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  background-color: #eaedf2;
+  background-color: #b2b2b2;
   -webkit-transition: background-color 0.24s ease-in-out;
   transition: background-color 0.24s ease-in-out;
 }
@@ -1199,7 +1199,7 @@ textarea:focus,
 textarea:active,
 .field:focus,
 .field:active {
-  background-color: #f7f8fa;
+  background-color: #bcbcbc;
   outline: none;
 }
 input[type="text"].error, input[type="text"].is-invalid,
@@ -1497,7 +1497,7 @@ a, a:visited {
   /* mobile tap color */
 }
 a:hover, a:focus, a:visited:hover, a:visited:focus {
-  color: #305b9b;
+  color: #130F30;
 }
 a:link, a:visited:link {
   /*
@@ -1524,27 +1524,27 @@ h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
 }
 
 h1, .h1 {
-  font-size: 2.618rem;
-  line-height: 3rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 800;
 }
 
 h2, .h2 {
-  font-size: 2.618rem;
-  line-height: 3rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 800;
   font-style: italic;
 }
 
 h3, .h3 {
-  font-size: 1.618rem;
-  line-height: 3rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 700;
 }
 
 h4, .h4 {
-  font-size: 1.618rem;
-  line-height: 3rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 700;
   font-style: italic;
 }
@@ -1572,10 +1572,11 @@ HEADER STYLES
 #site-name {
   color: #130F30;
   text-decoration: none;
-  padding: 0.75rem;
+  padding: 0.75rem 0;
   text-transform: uppercase;
   float: left;
   display: inline;
+  margin: 0;
 }
 
 /*********************
@@ -1589,8 +1590,7 @@ the navs on the site so our css is cleaner
 and more scalable.
 */
 .nav {
-  border-bottom: 0;
-  margin: 0;
+  margin: 1.5rem 0;
   /* end .menu li */
   /* highlight current page */
   /* end current highlighters */
@@ -1606,10 +1606,13 @@ and more scalable.
 }
 .nav li a {
   display: block;
-  color: #130F30;
+  color: #b2b2b2;
   text-decoration: none;
   padding: 0.75rem;
   text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 700;
   /*
   remember this is for mobile ONLY, so there's no need
   to even declare hover styles here, you can do it in
@@ -1625,12 +1628,18 @@ and more scalable.
 .nav li.current_page_item a,
 .nav li.current_page_ancestor a {
   font-style: italic;
+  color: #130F30;
 }
 
 /* end .nav */
 /*********************
 POSTS & CONTENT STYLES
 *********************/
+h1 {
+  -webkit-margin-before: 1.5rem;
+  -webkit-margin-after: 1.5rem;
+}
+
 p {
   -webkit-margin-before: 1.5rem;
   -webkit-margin-after: 1.5rem;
@@ -1679,7 +1688,7 @@ p {
 
 /* entry content */
 .entry-content {
-  padding: 1.5rem 1.5rem 0;
+  padding: 1.5rem 0;
   /*
   image alignment on a screen this size may be
   a bit difficult. It's set to start aligning
@@ -1688,7 +1697,7 @@ p {
   */
 }
 .entry-content p {
-  margin: 0 0 1.5rem;
+  margin: 1.5rem 0;
 }
 .entry-content table {
   width: 100%;
@@ -1696,8 +1705,8 @@ p {
 }
 .entry-content table caption {
   margin: 0 0 1.5rem;
-  font-size: 1.618rem;
-  line-height: 3rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: #9fa6b4;
   text-transform: uppercase;
 }
@@ -1717,14 +1726,14 @@ p {
   border-right: 0;
 }
 .entry-content blockquote {
-  margin: 0 0 1.5rem 1rem;
+  margin: 0 0 1.5rem 0;
   padding: 0 0 0 1rem;
   font-style: italic;
   color: #9fa6b4;
 }
 .entry-content dd {
   margin-left: 0;
-  font-size: 0.618rem;
+  font-size: 0.833rem;
   line-height: 1.5rem;
   color: #787878;
   margin-bottom: 2rem;
@@ -1816,7 +1825,7 @@ PAGE NAVI STYLES
   color: #3B6FBE;
 }
 .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus {
-  color: #305b9b;
+  color: #130F30;
 }
 .pagination .current {
   cursor: default;
@@ -1875,16 +1884,13 @@ COMMENT STYLES
 }
 .comment .vcard time {
   display: block;
-  font-size: 0.618rem;
+  font-size: 0.833rem;
   line-height: 1.5rem;
   font-style: italic;
 }
 .comment .vcard time a {
   color: #9fa6b4;
   text-decoration: none;
-}
-.comment .vcard time a:hover {
-  text-decoration: underline;
 }
 .comment .vcard .avatar {
   position: absolute;
@@ -1929,7 +1935,7 @@ COMMENT STYLES
 /* end .commentlist .comment_content */
 /* comment reply link */
 .comment-reply-link {
-  font-size: 0.618rem;
+  font-size: 0.833rem;
   line-height: 1.5rem;
   float: right;
 }
@@ -1940,7 +1946,7 @@ COMMENT STYLES
   font-style: italic;
   margin: 0 1rem;
   text-decoration: none;
-  font-size: 0.618rem;
+  font-size: 0.833rem;
   line-height: 1.5rem;
 }
 
@@ -1971,7 +1977,7 @@ COMMENT FORM STYLES
 .form-allowed-tags {
   padding: 1.5rem;
   background-color: #f8f9fa;
-  font-size: 0.618rem;
+  font-size: 0.833rem;
   line-height: 1.5rem;
 }
 
@@ -2039,7 +2045,7 @@ view.
 */
 /* end .footer-links */
 .copyright {
-  font-size: 0.618rem;
+  font-size: 0.833rem;
   line-height: 1.5rem;
 }
 
@@ -2191,10 +2197,6 @@ you can add resource intensive styles.
     you can use hover styles here even though this size
     has the possibility of being a mobile device.
     */
-  }
-  .nav li a:hover, .nav li a:focus {
-    color: #27497e;
-    text-decoration: underline;
   }
   .nav li ul.sub-menu,
   .nav li ul.children {

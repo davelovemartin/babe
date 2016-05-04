@@ -55,7 +55,8 @@
 
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 
-						<a id="site-name" href="<?php echo home_url(); ?>" rel="nofollow" itemscope itemtype="http://schema.org/Organization"><?php bloginfo('name'); ?></a>
+						<a id="site-name" href="<?php echo home_url(); ?>" rel="nofollow" itemscope itemtype="http://schema.org/Organization">
+							<h1><?php bloginfo('name'); ?></h1></a>
 						<?php wp_nav_menu(array(
     					         'container' => false, // remove nav container
     					         'container_class' => 'menu cf',  // class of container (should you choose to use it)

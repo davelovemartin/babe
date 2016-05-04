@@ -121,23 +121,23 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 }
 
 h1, .h1 {
-	@include type-setting(2);
+	@include type-setting(0);
 	font-weight: 800;
 }
 
 h2, .h2 {
-	@include type-setting(2);
+	@include type-setting(0);
 	font-weight: 800;
 	font-style: italic;
 }
 
 h3, .h3 {
-	@include type-setting(1);
+	@include type-setting(0);
 	font-weight: 700;
 }
 
 h4, .h4 {
-	@include type-setting(1);
+	@include type-setting(0);
 	font-weight: 700;
 	font-style: italic;
 }
@@ -165,10 +165,11 @@ HEADER STYLES
 #site-name {
 	color: $black;
 	text-decoration: none;
-	padding: $half-base-line;
+	padding: $half-base-line 0;
 	text-transform: uppercase;
 	float: left;
 	display: inline;
+	margin: 0;
 }
 
 /*********************
@@ -184,17 +185,18 @@ and more scalable.
 */
 
 .nav {
-	border-bottom: 0;
-	margin: 0;
+	margin: $base-line 0;
 
 	li {
 
 		a {
 			display: block;
-			color: $black;
+			color: $gray;
 			text-decoration: none;
 			padding: $half-base-line;
 			text-transform: uppercase;
+			@include type-setting(0);
+			font-weight: 700;
 			/*
 			remember this is for mobile ONLY, so there's no need
 			to even declare hover styles here, you can do it in
@@ -249,6 +251,7 @@ and more scalable.
 
 		a {
 			font-style: italic;
+			color: $text-color;
 		}
 
 	}  /* end current highlighters */
@@ -259,6 +262,11 @@ and more scalable.
 /*********************
 POSTS & CONTENT STYLES
 *********************/
+
+h1 {
+	-webkit-margin-before: $base-line;
+    -webkit-margin-after: $base-line;
+}
 
 p {
 	-webkit-margin-before: $base-line;
@@ -322,10 +330,10 @@ p {
 
 		/* entry content */
 		.entry-content {
-			padding: $base-line $base-line 0;
+			padding: $base-line 0;
 
 			p {
-				margin: 0 0 $base-line;
+				margin: $base-line 0;
 			}
 
 
@@ -355,7 +363,7 @@ p {
 
 				caption {
 					margin: 0 0 $base-line;
-					@include type-setting(1);
+					@include type-setting(0);
 					color: $meta-gray;
 					text-transform: uppercase;
 				}
@@ -385,7 +393,7 @@ p {
 			}
 
 			blockquote {
-				margin: 0 0 $base-line 1rem;
+				margin: 0 0 $base-line 0;
 				padding: 0 0 0 1rem;
 				font-style: italic;
 				color: $meta-gray;
@@ -539,7 +547,7 @@ PAGE NAVI STYLES
 
     	&:hover, &:focus {
     		background-color: $white;
-    		color: $text-color;
+    		color: $link-hover;
     	}
     }
 
@@ -622,7 +630,6 @@ COMMENT STYLES
 				text-decoration: none;
 
 				&:hover {
-					text-decoration: underline;
 				}
 
 			}

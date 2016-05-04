@@ -26,7 +26,7 @@ $black:             #130F30;
 $white:             #fff;
 
 $light-gray:        #f8f9fa;
-$gray:              #eaedf2;
+$gray:              #b2b2b2;
 $text-color:        $black;
 $nav-hover:         #27497e;
 $meta-gray:         #9fa6b4;
@@ -39,7 +39,7 @@ $bones-pink:        #f01d4f;
 $blue:              #3B6FBE;
 
 $link-color:        $blue;
-$link-hover:        darken($link-color, 9%);
+$link-hover:        $black;
 
 $border-color:      #ccc;
 $disabled-gray:     #cfcfcf;

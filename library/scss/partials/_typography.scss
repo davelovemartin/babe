@@ -144,17 +144,17 @@ https://scotch.io/tutorials/aesthetic-sass-3-typography-and-vertical-rhythm
 */
 
 $type-scale: (
-  -1: 0.618rem,  // small text
+  -1: 0.833rem,  // small text
   0: 1rem,      // body text
-  1: 1.618rem,  // large text
-  2: 2.618rem   // main heading
+  1: 1.2rem,  // large text
+  2: 1.44rem   // main heading
 );
 
 $line-height: (
   -1: $base-line-height,
   0: $base-line-height,
-  1: $base-line-height * 2,
-  2: $base-line-height * 2
+  1: $base-line-height,
+  2: $base-line-height
 );
 
 
