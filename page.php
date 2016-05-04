@@ -44,15 +44,11 @@
 
 								</footer>
 
-								<?php comments_template(); ?>
-
 							</article>
 
 							<?php endwhile; endif; ?>
 
 						</main>
-
-						<?php get_sidebar(); ?>
 
 				</div>
 
