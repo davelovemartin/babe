@@ -1572,7 +1572,7 @@ HEADER STYLES
 #site-name {
   color: #130F30;
   text-decoration: none;
-  padding: 1.5rem;
+  padding: 0.75rem;
   text-transform: uppercase;
   float: left;
   display: inline;
@@ -1608,7 +1608,7 @@ and more scalable.
   display: block;
   color: #130F30;
   text-decoration: none;
-  padding: 1.5rem;
+  padding: 0.75rem;
   text-transform: uppercase;
   /*
   remember this is for mobile ONLY, so there's no need
