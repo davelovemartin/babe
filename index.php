@@ -13,16 +13,6 @@
 								<section class="entry-content cf">
 									<?php the_content(); ?>
 								</section>
-
-								<footer class="article-footer cf">
-
-                 	<?php printf( '<p class="footer-category">' . '%1$s</p>' , get_the_category_list(', ') ); ?>
-
-                  <?php the_tags( '<p class="footer-tags tags"><span class="tags-title">' . __( 'Tags:', 'babe' ) . '</span> ', ', ', '</p>' ); ?>
-
-
-								</footer>
-
 							</article>
 
 							<?php endwhile; ?>

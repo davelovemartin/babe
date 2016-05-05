@@ -1151,7 +1151,7 @@ textarea,
 .field {
   display: block;
   height: 3rem;
-  padding: 0 1rem;
+  padding: 1rem;
   margin-bottom: 1rem;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1409,6 +1409,17 @@ select {
   background-position: 97.5% center;
 }
 
+button {
+  background-color: #fff;
+  border: #130F30 1px solid;
+  font-size: 0.833rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+button:hover {
+  background-color: #f8f9fa;
+}
+
 /*********************
 BASE (MOBILE) SIZE
 This are the mobile styles. It's what people see on their phones. If
@@ -1572,7 +1583,7 @@ HEADER STYLES
 #site-name {
   color: #130F30;
   text-decoration: none;
-  padding: 0.75rem 0;
+  padding: 1.5rem 0;
   text-transform: uppercase;
   float: left;
   display: inline;
@@ -1590,7 +1601,7 @@ the navs on the site so our css is cleaner
 and more scalable.
 */
 .nav {
-  margin: 1.5rem 0;
+  margin: 0.75rem 0;
   /* end .menu li */
   /* highlight current page */
   /* end current highlighters */
@@ -1634,6 +1645,9 @@ and more scalable.
   font-style: normal;
   color: #b2b2b2;
 }
+.nav ul.sub-menu a:hover {
+  color: #130F30;
+}
 .nav ul.sub-menu li.current_page_item a {
   font-style: italic;
   color: #130F30;
@@ -1644,13 +1658,13 @@ and more scalable.
 POSTS & CONTENT STYLES
 *********************/
 h1 {
-  -webkit-margin-before: 1.5rem;
-  -webkit-margin-after: 1.5rem;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
 }
 
 p {
-  -webkit-margin-before: 1.5rem;
-  -webkit-margin-after: 1.5rem;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
 }
 
 #content {

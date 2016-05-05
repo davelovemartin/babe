@@ -54,9 +54,11 @@
 
 
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-
-						<a id="site-name" href="<?php echo home_url(); ?>" rel="nofollow" itemscope itemtype="http://schema.org/Organization">
-							<h1><?php bloginfo('name'); ?></h1></a>
+						<div class="m-all t-1of3 d-2of7">
+							<a id="site-name" href="<?php echo home_url(); ?>" rel="nofollow" itemscope itemtype="http://schema.org/Organization">
+								<h1><?php bloginfo('name'); ?></h1></a>
+						</div>
+						<div class="m-all t-2of3 d-5of7">
 						<?php wp_nav_menu(array(
     					         'container' => false, // remove nav container
     					         'container_class' => 'menu cf',  // class of container (should you choose to use it)
@@ -70,7 +72,7 @@
         			               'depth' => 0, // limit the depth of the nav
     					         'fallback_cb' => ''   // fallback function (if there is one)
 						)); ?>
-
+					</div>
 					</nav>
 
 				</div>
