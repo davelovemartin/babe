@@ -1153,7 +1153,7 @@ textarea,
   height: 3rem;
   padding: 0 1rem;
   margin-bottom: 1rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.5rem;
   color: #130F30;
   vertical-align: middle;
@@ -1162,7 +1162,7 @@ textarea,
   width: 100%;
   max-width: 400px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  background-color: #b2b2b2;
+  background-color: #d8dbe1;
   -webkit-transition: background-color 0.24s ease-in-out;
   transition: background-color 0.24s ease-in-out;
 }
@@ -1199,7 +1199,7 @@ textarea:focus,
 textarea:active,
 .field:focus,
 .field:active {
-  background-color: #bcbcbc;
+  background-color: #bcc1ca;
   outline: none;
 }
 input[type="text"].error, input[type="text"].is-invalid,
@@ -1613,6 +1613,7 @@ and more scalable.
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 700;
+  transition: color 0.5s;
   /*
   remember this is for mobile ONLY, so there's no need
   to even declare hover styles here, you can do it in
@@ -1624,9 +1625,16 @@ and more scalable.
 .nav li ul.children li a {
   padding-left: 1rem;
 }
-.nav li.current-menu-item a,
 .nav li.current_page_item a,
 .nav li.current_page_ancestor a {
+  font-style: italic;
+  color: #130F30;
+}
+.nav ul.sub-menu a {
+  font-style: normal;
+  color: #b2b2b2;
+}
+.nav ul.sub-menu li.current_page_item a {
   font-style: italic;
   color: #130F30;
 }
