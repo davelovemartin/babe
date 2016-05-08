@@ -1657,18 +1657,11 @@ and more scalable.
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-h1 {
+h1, h2, h3, h4, h5, h6, p, blockquote, li, a {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
-}
-
-p {
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
-}
-
-#content {
-  margin-top: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .hentry {
@@ -1749,7 +1742,7 @@ p {
 }
 .entry-content blockquote {
   margin: 0 0 1.5rem 0;
-  padding: 0 0 0 1rem;
+  padding: 0;
   font-style: italic;
   color: #9fa6b4;
 }
